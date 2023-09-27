@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply 
+    dark:bg-[#121212] 
+    bg-[#edf6f9];
+  }
+  body::before {
+    @apply 
+    fixed 
+    w-screen 
+    h-screen 
+    content-[""] opacity-[0.05] z-[1000] 
+    pointer-events-none 
+    bg-[linear-gradient(90deg,black_0.05rem,transparent_0.05rem)] 
+    dark:bg-[linear-gradient(90deg,white_0.05rem,transparent_0.05rem)] 
+    bg-[size:8rem_8rem] 
+    left-0 top-0;
+  }
+  .nav-container {
+    @apply 
+    bg-[#edf6f933]
+    dark:bg-[#12121233] 
+    backdrop-blur-[5px];
+  }
+}
+
