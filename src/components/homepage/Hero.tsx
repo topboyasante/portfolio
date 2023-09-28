@@ -7,12 +7,12 @@ function Hero() {
       <section>
         <section className="flex items-center gap-3">
           <section>
-            <h1 className="text-2xl lg:text-5xl lg:text-left text-primary-light dark:text-primary-dark">
+            <h1 className="text-2xl lg:text-5xl lg:text-left text-primary-light dark:text-primary-dark mb-2">
               Nana Kwasi Asante
             </h1>
-            <h1 className="text-md lg:text-xl lg:text-left">
+            <p className="text-md lg:text-xl lg:text-left text-[#777777]">
               Software Engineer
-            </h1>
+            </p>
           </section>
         </section>
         <main className=" my-5">

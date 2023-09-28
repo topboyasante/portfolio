@@ -5,7 +5,7 @@
 @layer base {
   body {
     @apply 
-    dark:bg-[#121212] 
+    dark:bg-[#080809] 
     bg-[#edf6f9];
   }
   body::before {
@@ -23,8 +23,7 @@
   .nav-container {
     @apply 
     bg-[#edf6f933]
-    dark:bg-[#12121233] 
+    dark:bg-[#08080933] 
     backdrop-blur-[5px];
   }
 }
-
