@@ -15,7 +15,7 @@ function Hero() {
             </p>
           </section>
         </section>
-        <main className=" my-5">
+        <main className="">
           <section>
             <p className="lg:text-lg  lg:text-left content">
               {`A skilled software engineer

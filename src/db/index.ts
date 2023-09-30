@@ -18,9 +18,9 @@ import {
   SiPostgresql,
   SiSanity,
   SiTailwindcss,
-  SiFirebase
+  SiFirebase,
+  SiNextdotjs,
 } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
 
 interface ITechStackItem {
   id: number;
@@ -28,8 +28,27 @@ interface ITechStackItem {
   icon: IconType;
 }
 
+interface IProjectItem {
+  id: number;
+  title: string;
+  about: string;
+  stack: {
+    id: number;
+    icon: IconType;
+  }[];
+  link: string;
+}
+
+interface IWorkExperience {
+  title: string;
+  company: string;
+  about: string;
+  duration: string;
+  tools: string[];
+}
+
 // Tech Stack:
-const TechStackList: ITechStackItem[] = [
+export const TechStackList: ITechStackItem[] = [
   {
     id: 1,
     name: "HTML",
@@ -63,7 +82,7 @@ const TechStackList: ITechStackItem[] = [
   {
     id: 7,
     name: "NextJS",
-    icon: TbBrandNextjs,
+    icon: SiNextdotjs,
   },
   {
     id: 8,
@@ -132,4 +151,105 @@ const TechStackList: ITechStackItem[] = [
   },
 ];
 
-export default TechStackList;
+export const ProjectsList: IProjectItem[] = [
+  {
+    id: 1,
+    title: "40GraphVille",
+    about: "Website for a photography company, with a CMS.",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiNextdotjs,
+      },
+      {
+        id: 3,
+        icon: SiSanity,
+      },
+      {
+        id: 4,
+        icon: SiReactquery,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 5,
+        icon: SiJavascript,
+      },
+    ],
+    link: "40graphville.com",
+  },
+  {
+    id: 2,
+    title: "WDWR",
+    about: "A Job listing application. Search for jobs, and apply!",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiNextdotjs,
+      },
+      {
+        id: 3,
+        icon: SiTypescript,
+      },
+      {
+        id: 4,
+        icon: SiAxios,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+    ],
+    link: "wdwr.vercel.app",
+  },
+];
+
+export const workExprience: IWorkExperience[] = [
+  {
+    title: "Frontend Engineer",
+    company: "Slightly Techie Community",
+    about: `At Slightly Techie, we're part of a collaborative team working on various projects, including a laundry booking app. I'm actively contributing to its development using React, TypeScript, and TailwindCSS for the frontend, while our backend experts use Django. Our goal is to create a streamlined and robust system that enhances the laundry booking experience for users, meeting our client's specific needs with dedication and expertise.`,
+    duration: "May 2023 - Present",
+    tools: [
+      "React",
+      "TypeScript",
+      "Next JS",
+      "Vite JS",
+      "TailwindCSS",
+      "Figma",
+    ],
+  },
+  {
+    title: "Frontend Engineer",
+    company: "Zomujo Foundation",
+    about: `
+    I collaborated on a contract project aimed at building the web frontend for Zomujo Foundation. Using Next.js, TailwindCSS, and TypeScript, we enhanced the performance and functionality of their web application. Leveraging Next.js, we delivered an optimized and responsive frontend experience that aligns with the organization's goals.`,
+    duration: "May 2023 - June 2023",
+    tools: ["React", "TypeScript", "Next JS", "TailwindCSS"],
+  },
+  {
+    title: "Frontend Engineer Intern",
+    company: "Axon Information Systems",
+    about: `
+    I had the pleasure of collaborating with an exceptional team to create a cutting-edge Blood Bank System. We used JavaScript, React, and TailwindCSS for the frontend, while our skilled backend developers employed C# for the robust backend. Our combined efforts resulted in a reliable and highly efficient frontend. It was a gratifying experience contributing to the success of the Blood Bank System.`,
+    duration: "Sep. 2022 - Jan. 2023",
+    tools: [
+      "React",
+      "JavaScript",
+      "Redux",
+      "TailwindCSS",
+      "Axios",
+      "HeadlessUI",
+    ],
+  },
+];

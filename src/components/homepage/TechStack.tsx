@@ -1,11 +1,11 @@
-import TechStackList from "@/db";
+import {TechStackList} from "@/db";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
 function TechStack() {
   return (
-    <section className="w-full">
-      <h1 className="text-2xl text-primary-light dark:text-primary-dark mb-5">
+    <section className="w-full mb-5">
+      <h1 className="text-2xl lg:text-3xl text-left font-bold text-primary-light dark:text-primary-dark mb-5">
         Tech Stack
       </h1>
       <Marquee>
