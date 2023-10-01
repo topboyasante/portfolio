@@ -2,6 +2,7 @@ import Experience from "@/components/homepage/Experience";
 import Hero from "@/components/homepage/Hero";
 import Projects from "@/components/homepage/Projects";
 import TechStack from "@/components/homepage/TechStack";
+import Footer from "@/components/navigation/Footer";
 import React from "react";
 
 function Page() {
@@ -15,6 +16,7 @@ function Page() {
       <br />
       <Projects />
       <br />
+      <Footer/>
     </main>
   );
 }

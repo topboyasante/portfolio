@@ -1,21 +1,41 @@
 import React from "react";
 import Links from "../ui/Links";
-
+import Image from "next/image";
+import HeroImg from "../../assets/smiling.webp";
 function Hero() {
   return (
     <section className="pt-[2vh]">
       <section>
-        <section className="flex items-center gap-3">
+        <section className="flex flex-col md:flex-row sm:items-center gap-5">
+          <Image
+            src={HeroImg}
+            alt="asante"
+            className="w-[80px] sm:w-[120px] rounded-full bg-primary-light dark:bg-primary-dark"
+            id="hero-img"
+          />
           <section>
-            <h1 className="text-2xl lg:text-5xl lg:text-left text-primary-light dark:text-primary-dark mb-2">
+            <h1 className="text-2xl lg:text-4xl lg:text-left text-primary-light dark:text-primary-dark">
               Nana Kwasi Asante
             </h1>
-            <p className="text-md lg:text-xl lg:text-left text-[#777777]">
+            <h1 className="text-md lg:text-lg lg:text-left">
               Software Engineer
+            </h1>
+            <p>
+              Currently a Frontend Developer Intern at{" "}
+              <a
+                className="text-primary-light dark:text-primary-dark"
+                href="https://axoninfosystems.com/v5/"
+              >
+                Axon Information Systems
+              </a>
             </p>
           </section>
         </section>
-        <main className="">
+        <br />
+        <section>
+          <h1 className="text-2xl lg:text-3xl text-left font-bold text-primary-light dark:text-primary-dark mb-5">
+            About Me
+          </h1>
           <section>
             <p className="lg:text-lg  lg:text-left content">
               {`A skilled software engineer
@@ -38,7 +58,7 @@ function Hero() {
             </p>
             <Links />
           </section>
-        </main>
+        </section>
       </section>
     </section>
   );

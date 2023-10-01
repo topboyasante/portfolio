@@ -7,7 +7,7 @@ function Projects() {
       <h1 className="text-2xl lg:text-3xl text-left font-bold text-primary-light dark:text-primary-dark">
         Projects
       </h1>
-      <section className="grid cols-span-1 lg:grid-cols-3 gap-5 my-5">
+      <section className="flex flex-col gap-5 my-5">
         {ProjectsList.map((item) => {
           return (
             <section key={item.id} className="col-span-1">
@@ -15,7 +15,7 @@ function Projects() {
                 {item.title}
               </h1>
               <p>{item.about}</p>
-              <a href={`https://${item.link}`} className="text-[#777777]">{item.link}</a>
+              <a target="_blank" href={`https://${item.link}`} className="text-[#777777]">{item.link}</a>
               <section className="flex gap-5 flex-wrap">
                 {item.stack.map((stack) => {
                   return (

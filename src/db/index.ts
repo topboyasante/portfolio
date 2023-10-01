@@ -212,6 +212,7 @@ export const ProjectsList: IProjectItem[] = [
     ],
     link: "wdwr.vercel.app",
   },
+ 
 ];
 
 export const workExprience: IWorkExperience[] = [
@@ -241,7 +242,7 @@ export const workExprience: IWorkExperience[] = [
     title: "Frontend Engineer Intern",
     company: "Axon Information Systems",
     about: `
-    I had the pleasure of collaborating with an exceptional team to create a cutting-edge Blood Bank System. We used JavaScript, React, and TailwindCSS for the frontend, while our skilled backend developers employed C# for the robust backend. Our combined efforts resulted in a reliable and highly efficient frontend. It was a gratifying experience contributing to the success of the Blood Bank System.`,
+    I had the pleasure of collaborating with an exceptional team to create a cutting-edge Blood Bank System. We used JavaScript, React, and TailwindCSS for the frontend, while our skilled backend developers employed C# for the robust backend. Our combined efforts resulted in a reliable and highly efficient frontend.`,
     duration: "Sep. 2022 - Jan. 2023",
     tools: [
       "React",
