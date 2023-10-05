@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section className="pt-[2vh]">
       <section>
-        <section className="flex flex-col md:flex-row sm:items-center gap-5">
+        <section className="flex flex-col md:flex-row lg:items-center  gap-5">
           <Image
             src={HeroImg}
             alt="asante"
@@ -24,6 +24,7 @@ function Hero() {
               Currently a Frontend Developer Intern at{" "}
               <a
                 className="text-primary-light dark:text-primary-dark"
+                target="_blank"
                 href="https://axoninfosystems.com/v5/"
               >
                 Axon Information Systems

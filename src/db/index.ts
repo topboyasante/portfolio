@@ -217,7 +217,7 @@ export const ProjectsList: IProjectItem[] = [
 
 export const workExprience: IWorkExperience[] = [
   {
-    title: "Frontend Engineer",
+    title: "UI/UX & Frontend Engineer",
     company: "Slightly Techie Community",
     about: `At Slightly Techie, we're part of a collaborative team working on various projects, including a laundry booking app. I'm actively contributing to its development using React, TypeScript, and TailwindCSS for the frontend, while our backend experts use Django. Our goal is to create a streamlined and robust system that enhances the laundry booking experience for users, meeting our client's specific needs with dedication and expertise.`,
     duration: "May 2023 - Present",

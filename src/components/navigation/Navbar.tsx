@@ -4,7 +4,7 @@ import DarkModeToggle from "../ui/DarkModeToggle";
 
 function Navbar() {
   return (
-    <nav className="fixed w-screen z-[50] nav-container h-[12vh] sm:h-[7vh] dark:bg-secondary-dark">
+    <nav className="fixed w-screen z-[50] nav-container h-[8vh] sm:h-[7vh] dark:bg-secondary-dark">
       <section className="max-w-[700px] mx-auto h-full p-5">
         <section className="flex justify-between items-center flex-wrap w-full px-5 xl:px-0 h-full">
           <Link href={`/`}>
