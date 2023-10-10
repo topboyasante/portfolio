@@ -15,12 +15,15 @@ function Navbar() {
             </section>
           </Link>
           <section className="flex items-center gap-5 ">
-            <a href="mailto:asantekwasi101@gmail.com" className="hover:scale-105 ease duration-500">
+            <DarkModeToggle />
+            <a
+              href="mailto:asantekwasi101@gmail.com"
+              className="hover:scale-105 ease duration-500"
+            >
               <span className="uppercase text-xs md:text-md md:w-[10%] border border-primary-light dark:border-primary-dark text-primary-light dark:text-primary-dark rounded-[45px] px-[8px] py-[5px] ">
                 contact
               </span>
             </a>
-            <DarkModeToggle />
           </section>
         </section>
       </section>
