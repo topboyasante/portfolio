@@ -186,6 +186,86 @@ export const ProjectsList: IProjectItem[] = [
   },
   {
     id: 2,
+    title: "Zomujo Foundation",
+    about: "Website for a health NGO.",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiNextdotjs,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 5,
+        icon: SiTypescript,
+      },
+    ],
+    link: "zomujofoundation.org",
+  },
+  {
+    id: 3,
+    title: "The R Group",
+    about: "Website for a consultation company.",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiVite,
+      },
+      {
+        id: 3,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 4,
+        icon: SiTypescript,
+      },
+      {
+        id: 5,
+        icon: SiSanity,
+      },
+    ],
+    link: "thergroup.vercel.app",
+  },
+  {
+    id: 4,
+    title: "Slightly Techie",
+    about: "Official website for the Slightly Techie Community.",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiNextdotjs,
+      },
+      {
+        id: 3,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 4,
+        icon: SiJavascript,
+      },
+      {
+        id: 5,
+        icon: SiFirebase,
+      },
+    ],
+    link: "slightlytechie.com",
+  },
+  {
+    id: 5,
     title: "WDWR",
     about: "A Job listing application. Search for jobs, and apply!",
     stack: [
@@ -212,7 +292,6 @@ export const ProjectsList: IProjectItem[] = [
     ],
     link: "wdwr.vercel.app",
   },
- 
 ];
 
 export const workExprience: IWorkExperience[] = [
