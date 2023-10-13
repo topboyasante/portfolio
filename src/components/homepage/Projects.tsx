@@ -7,7 +7,7 @@ function Projects() {
       <h1 className="text-2xl lg:text-3xl text-left font-bold text-primary-light dark:text-primary-dark">
         Projects
       </h1>
-      <section className="flex flex-col gap-5 my-5">
+      <section className="grid grid-cols-2 gap-5 my-5">
         {ProjectsList.map((item) => {
           return (
             <section key={item.id} className="col-span-1">

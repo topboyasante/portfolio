@@ -4,11 +4,10 @@
 
 @layer base {
   body {
-    @apply 
-    dark:bg-[#06061D] 
+    @apply dark:bg-[#161619] 
     bg-[#ecf8f8];
   }
-  body::before {
+  /* body::before {
     @apply 
     fixed 
     w-screen 
@@ -19,11 +18,20 @@
     dark:bg-[linear-gradient(white_0.05rem,transparent_0.05rem),linear-gradient(90deg,white_0.05rem,transparent_0.05rem)] 
     bg-[size:2rem_2rem] 
     left-0 top-0;
-  }
+  } */
   .nav-container {
-    @apply 
-    bg-[#ecf8f833]
-    dark:bg-[#06061D33] 
+    @apply bg-transparent
+    dark:bg-[#16161933] 
     backdrop-blur-[5px];
   }
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  background-image: url("../../public/noise.png");
+  background-size: 200px 200px;
+  background-position: 0 0;
 }
