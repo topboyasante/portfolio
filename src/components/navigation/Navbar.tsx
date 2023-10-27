@@ -1,20 +1,28 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import DarkModeToggle from "../ui/DarkModeToggle";
+import { motion } from "framer-motion";
 
 function Navbar() {
   return (
-    <nav className="fixed w-screen z-[50] nav-container h-[8vh] sm:h-[7vh] dark:bg-secondary-dark">
-      <section className="max-w-[700px] mx-auto h-full">
+    <nav className="fixed overflow-hidden w-screen z-[50] nav-container h-[8vh] sm:h-[7vh] dark:bg-secondary-dark">
+      <section className="max-w-[1000px] mx-auto h-full">
         <section className="flex justify-between items-center flex-wrap w-full px-5 xl:px-0 h-full">
-          <Link href={`/`}>
-            <section className="flex items-center">
-              <span className="text-lg font-bold text-primary-light dark:text-primary-dark">
-                nk.
-              </span>
-            </section>
-          </Link>
-          <section className="flex items-center gap-5 ">
+          <motion.section initial={{ y: "-10vh" }} animate={{ y: 0 }}>
+            <Link href={`/`}>
+              <section className="flex items-center">
+                <span className="text-lg font-bold text-primary-light dark:text-primary-dark">
+                  nk.
+                </span>
+              </section>
+            </Link>
+          </motion.section>
+          <motion.section
+            initial={{ y: "10vh" }}
+            animate={{ y: 0 }}
+            className="flex items-center gap-5 "
+          >
             <DarkModeToggle />
             <a
               href="mailto:asantekwasi101@gmail.com"
@@ -24,7 +32,7 @@ function Navbar() {
                 contact
               </span>
             </a>
-          </section>
+          </motion.section>
         </section>
       </section>
     </nav>

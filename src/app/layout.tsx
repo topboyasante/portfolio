@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import local from "next/font/local";
 import { clsx } from 'clsx';
+import Footer from "@/components/navigation/Footer";
 
 export const metadata: Metadata = {
   title: "Nana Kwasi Asante",
@@ -42,7 +43,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="max-w-[750px] pt-[9vh] sm:pt-[8vh] mx-auto p-5">{children}</main>
+          <main className="max-w-[1000px] pt-[9vh] sm:pt-[8vh] mx-auto p-5 xl:px-0">{children}</main>
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>

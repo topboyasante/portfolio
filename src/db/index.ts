@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 import {
   SiHtml5,
@@ -22,6 +23,9 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 
+import FortyGV from "../assets/40Graphville.png";
+
+
 interface ITechStackItem {
   id: number;
   name: string;
@@ -37,6 +41,7 @@ interface IProjectItem {
     icon: IconType;
   }[];
   link: string;
+  img:StaticImageData
 }
 
 interface IWorkExperience {
@@ -183,114 +188,7 @@ export const ProjectsList: IProjectItem[] = [
       },
     ],
     link: "40graphville.com",
-  },
-  {
-    id: 2,
-    title: "Zomujo Foundation",
-    about: "Website for a health NGO.",
-    stack: [
-      {
-        id: 1,
-        icon: SiReact,
-      },
-      {
-        id: 2,
-        icon: SiNextdotjs,
-      },
-      {
-        id: 5,
-        icon: SiTailwindcss,
-      },
-      {
-        id: 5,
-        icon: SiTypescript,
-      },
-    ],
-    link: "zomujofoundation.org",
-  },
-  {
-    id: 3,
-    title: "The R Group",
-    about: "Website for a consultation company.",
-    stack: [
-      {
-        id: 1,
-        icon: SiReact,
-      },
-      {
-        id: 2,
-        icon: SiVite,
-      },
-      {
-        id: 3,
-        icon: SiTailwindcss,
-      },
-      {
-        id: 4,
-        icon: SiTypescript,
-      },
-      {
-        id: 5,
-        icon: SiSanity,
-      },
-    ],
-    link: "thergroup.vercel.app",
-  },
-  {
-    id: 4,
-    title: "Slightly Techie",
-    about: "Official website for the Slightly Techie Community.",
-    stack: [
-      {
-        id: 1,
-        icon: SiReact,
-      },
-      {
-        id: 2,
-        icon: SiNextdotjs,
-      },
-      {
-        id: 3,
-        icon: SiTailwindcss,
-      },
-      {
-        id: 4,
-        icon: SiJavascript,
-      },
-      {
-        id: 5,
-        icon: SiFirebase,
-      },
-    ],
-    link: "slightlytechie.com",
-  },
-  {
-    id: 5,
-    title: "WDWR",
-    about: "A Job listing application. Search for jobs, and apply!",
-    stack: [
-      {
-        id: 1,
-        icon: SiReact,
-      },
-      {
-        id: 2,
-        icon: SiNextdotjs,
-      },
-      {
-        id: 3,
-        icon: SiTypescript,
-      },
-      {
-        id: 4,
-        icon: SiAxios,
-      },
-      {
-        id: 5,
-        icon: SiTailwindcss,
-      },
-    ],
-    link: "wdwr.vercel.app",
+    img:FortyGV
   },
 ];
 

@@ -4,24 +4,24 @@
 
 @layer base {
   body {
-    @apply dark:bg-[#161619] 
-    bg-[#ecf8f8];
+    @apply dark:bg-[#000000] 
+    bg-[#ffffff];
   }
   /* body::before {
     @apply 
     fixed 
     w-screen 
     h-screen 
-    content-[""] opacity-[0.05] z-[-1] 
+    content-[""] opacity-[0.02] z-[-1] 
     pointer-events-none 
     bg-[linear-gradient(black_0.05rem,transparent_0.05rem),linear-gradient(90deg,black_0.05rem,transparent_0.05rem)] 
     dark:bg-[linear-gradient(white_0.05rem,transparent_0.05rem),linear-gradient(90deg,white_0.05rem,transparent_0.05rem)] 
-    bg-[size:2rem_2rem] 
+    bg-[size:10rem_10rem] 
     left-0 top-0;
   } */
   .nav-container {
     @apply bg-transparent
-    dark:bg-[#16161933] 
+    dark:bg-[#00000033] 
     backdrop-blur-[5px];
   }
 }
@@ -30,8 +30,8 @@
   display: none;
 }
 
-body{
+/* body{
   background-image: url("../../public/noise.png");
   background-size: 200px 200px;
   background-position: 0 0;
-}
+} */
