@@ -21,9 +21,12 @@ import {
   SiTailwindcss,
   SiFirebase,
   SiNextdotjs,
+  SiDjango,
+  SiPython,
 } from "react-icons/si";
 
 import FortyGV from "../assets/40Graphville.png";
+import LDTB from "../assets/LDTB.png";
 
 
 interface ITechStackItem {
@@ -189,6 +192,47 @@ export const ProjectsList: IProjectItem[] = [
     ],
     link: "40graphville.com",
     img:FortyGV
+  },
+  {
+    id: 2,
+    title: "Laundry DirtToBright",
+    about: "Laundry Website",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiVite,
+      },
+      {
+        id: 3,
+        icon: SiSanity,
+      },
+      {
+        id: 4,
+        icon: SiReactquery,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 5,
+        icon: SiTypescript,
+      },
+      {
+        id: 6,
+        icon: SiDjango,
+      },
+      {
+        id: 7,
+        icon: SiPython,
+      },
+    ],
+    link: "laundrydirttobright.com",
+    img:LDTB
   },
 ];
 
