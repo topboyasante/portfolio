@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="fixed overflow-hidden w-screen z-[50] nav-container h-[8vh] sm:h-[7vh] dark:bg-secondary-dark">
       <section className="max-w-[1000px] mx-auto h-full">
         <section className="flex justify-between items-center flex-wrap w-full px-5 xl:px-0 h-full">
-          <motion.section initial={{ y: "-10vh" }} animate={{ y: 0 }}>
+          <motion.section initial={{ y: "-10vh" }} animate={{ y: 0 }} className="w-[30%]">
             <Link href={`/`}>
               <section className="flex items-center">
                 <span className="text-lg font-bold text-primary-light dark:text-primary-dark">
@@ -21,7 +21,7 @@ function Navbar() {
           <motion.section
             initial={{ y: "10vh" }}
             animate={{ y: 0 }}
-            className="flex items-center gap-2 w-full"
+            className="flex items-center gap-2 w-[70%]"
           >
             <DarkModeToggle />
             <a
