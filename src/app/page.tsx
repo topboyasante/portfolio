@@ -1,4 +1,3 @@
-import Experience from "@/components/homepage/Experience";
 import Hero from "@/components/homepage/Hero";
 import Projects from "@/components/homepage/Projects";
 import TechStack from "@/components/homepage/TechStack";
@@ -8,8 +7,8 @@ function Page() {
   return (
     <main>
       <Hero />
-      <TechStack/>
-      <Projects/>
+      <TechStack />
+      <Projects />
     </main>
   );
 }

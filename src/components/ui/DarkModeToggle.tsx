@@ -5,11 +5,10 @@ import { RiMoonLine, RiSunLine } from "react-icons/ri";
 
 const DarkModeToggle = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
   return (
     <button
       onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
-      className="hover:scale-105 ease duration-500 aspect-square p-1 w-fit grid place-items-center cursor-pointer"
+      className="border rounded-full border-primary-light dark:border-primary-dark hover:scale-105 ease duration-500 aspect-square p-1 w-fit grid place-items-center cursor-pointer"
     >
       {theme === "light" ? (
         <RiMoonLine className="text-primary-light dark:text-primary-dark" />

@@ -40,7 +40,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
+          // disableTransitionOnChange
         >
           <Navbar />
           <main className="max-w-[1000px] pt-[9vh] sm:pt-[8vh] mx-auto p-5 xl:px-0">{children}</main>

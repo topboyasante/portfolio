@@ -2,23 +2,32 @@
 import { ProjectsList } from "@/db";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 function Projects() {
-  const topProjects = ProjectsList.slice(0, 3);
+  const router = useRouter();
   return (
     <section className="w-full">
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        onClick={() => router.back()}
+        className="flex text-[#777777] mb-5 items-center gap-2"
+      >
+        <p>Head Back</p>
+        <BsArrowRight />
+      </motion.button>
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="text-2xl lg:text-3xl text-left font-bold text-primary-light dark:text-primary-dark"
       >
-        Projects
+        My Projects
       </motion.h1>
       <section className="grid grid-cols-1 gap-5 my-5">
-        {topProjects.map((item) => {
+        {ProjectsList.map((item) => {
           return (
             <motion.section
               initial={{ opacity: 0 }}
@@ -39,7 +48,7 @@ function Projects() {
                   <a
                     target="_blank"
                     href={`https://${item.link}`}
-                    className="text-[#777777] hover:text-primary-light dark:hover:text-primary-dark ease duration-500 flex items-center gap-2"
+                    className="text-[#777777] hover:text-primary-light dark:hover:text-primary-dark ease duration-500 flex  items-center gap-2"
                   >
                     {item.link}
                     <BsArrowRight />
@@ -62,16 +71,6 @@ function Projects() {
           );
         })}
       </section>
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="text-left font-bold text-primary-light dark:text-primary-dark flex items-center gap-2"
-      >
-        <Link href={`/projects`}>
-          <motion.h1>View More</motion.h1>
-        </Link>
-        <BsArrowRight />
-      </motion.section>
     </section>
   );
 }

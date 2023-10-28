@@ -5,23 +5,25 @@
 @layer base {
   body {
     @apply dark:bg-[#000000] 
-    bg-[#ffffff];
+    bg-[#edf6f9]
+     ease-in duration-200;
   }
-  /* body::before {
+  body::before {
     @apply 
     fixed 
     w-screen 
     h-screen 
-    content-[""] opacity-[0.02] z-[-1] 
+    content-[""] opacity-[0.03] z-[-1] 
     pointer-events-none 
     bg-[linear-gradient(black_0.05rem,transparent_0.05rem),linear-gradient(90deg,black_0.05rem,transparent_0.05rem)] 
     dark:bg-[linear-gradient(white_0.05rem,transparent_0.05rem),linear-gradient(90deg,white_0.05rem,transparent_0.05rem)] 
-    bg-[size:10rem_10rem] 
+    bg-[size:5rem_5rem] 
+    lg:bg-[size:10rem_10rem] 
     left-0 top-0;
-  } */
+  }
   .nav-container {
     @apply bg-transparent
-    dark:bg-[#00000033] 
+    /* dark:bg-[#00000033]  */
     backdrop-blur-[5px];
   }
 }

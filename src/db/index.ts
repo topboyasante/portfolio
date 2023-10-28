@@ -23,10 +23,13 @@ import {
   SiNextdotjs,
   SiDjango,
   SiPython,
+  SiMicrosoftsqlserver,
 } from "react-icons/si";
 
 import FortyGV from "../assets/40Graphville.png";
 import LDTB from "../assets/LDTB.png";
+import NZWalks from "../assets/NZWalks.png";
+import Farcry6 from "../assets/Farcry6.png";
 
 
 interface ITechStackItem {
@@ -234,6 +237,53 @@ export const ProjectsList: IProjectItem[] = [
     link: "laundrydirttobright.com",
     img:LDTB
   },
+  {
+    id: 3,
+    title: "NZWalks API",
+    about: "Backend API",
+    stack: [
+      {
+        id: 1,
+        icon: SiCsharp,
+      },
+      {
+        id: 2,
+        icon: SiDotnet,
+      },
+      {
+        id: 3,
+        icon: SiMicrosoftsqlserver,
+      },
+    ],
+    link: "github.com/topboyasante/NZWalks",
+    img:NZWalks
+  },
+  {
+    id: 4,
+    title: "FarCry 6",
+    about: "Backend API",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiTypescript,
+      },
+      {
+        id: 3,
+        icon: SiVite,
+      },
+      {
+        id: 4,
+        icon: SiTailwindcss,
+      },
+    ],
+    link: "farcry-6-portfolio.vercel.app",
+    img:Farcry6
+  },
+  
 ];
 
 export const workExprience: IWorkExperience[] = [
