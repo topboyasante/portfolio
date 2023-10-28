@@ -1,6 +1,5 @@
 "use client";
 import Links from "../ui/Links";
-import Image from "next/image";
 import { motion } from "framer-motion";
 function Hero() {
   return (

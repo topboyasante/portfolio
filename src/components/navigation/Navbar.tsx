@@ -21,7 +21,7 @@ function Navbar() {
           <motion.section
             initial={{ y: "10vh" }}
             animate={{ y: 0 }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 w-full"
           >
             <DarkModeToggle />
             <a
