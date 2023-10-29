@@ -29,7 +29,7 @@ function Navbar() {
               className="hover:scale-105 ease duration-500"
             >
               <span className="uppercase text-xs md:text-md md:w-[10%] border border-primary-light dark:border-primary-dark text-primary-light dark:text-primary-dark rounded-[45px] px-[8px] py-[5px] ">
-                contact
+                Contact
               </span>
             </a>
           </motion.section>
