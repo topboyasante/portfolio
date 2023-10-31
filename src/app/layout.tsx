@@ -29,9 +29,9 @@ const graphik = local({
   display: "swap",
 });
 
-if(process.env.NODE_ENV !== "development"){
-  new Sitenary(process.env.SITENARY_SITE_ID!)
-}
+// if(process.env.NODE_ENV !== "development"){
+//   new Sitenary(process.env.SITENARY_SITE_ID!)
+// }
 
 export default function RootLayout({
   children,
