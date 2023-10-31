@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import local from "next/font/local";
 import { clsx } from 'clsx';
 import Footer from "@/components/navigation/Footer";
-import Sitenary from "sitenary";
+// import Sitenary from "sitenary";
 
 export const metadata: Metadata = {
   title: "Nana Kwasi Asante",
