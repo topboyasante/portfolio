@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import local from "next/font/local";
 import { clsx } from 'clsx';
 import Footer from "@/components/navigation/Footer";
+import Sitenary from "sitenary";
 
 export const metadata: Metadata = {
   title: "Nana Kwasi Asante",
@@ -28,6 +29,10 @@ const graphik = local({
   display: "swap",
 });
 
+if(process.env.NODE_ENV !== "development"){
+  new Sitenary(process.env.SITENARY_SITE_ID!)
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -40,7 +45,6 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
-          // disableTransitionOnChange
         >
           <Navbar />
           <main className="max-w-[1000px] pt-[9vh] sm:pt-[8vh] mx-auto p-5 xl:px-0">{children}</main>
