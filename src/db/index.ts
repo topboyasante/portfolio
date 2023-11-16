@@ -80,31 +80,31 @@ export const TechStackList: ITechStackItem[] = [
     name: "TypeScript",
     icon: SiTypescript,
   },
-  {
-    id: 5,
-    name: "C#",
-    icon: SiCsharp,
-  },
+  // {
+  //   id: 5,
+  //   name: "C#",
+  //   icon: SiCsharp,
+  // },
   {
     id: 6,
     name: "React",
     icon: SiReact,
   },
-  {
-    id: 7,
-    name: "NextJS",
-    icon: SiNextdotjs,
-  },
-  {
-    id: 8,
-    name: ".NET",
-    icon: SiDotnet,
-  },
-  {
-    id: 9,
-    name: "Figma",
-    icon: SiFigma,
-  },
+  // {
+  //   id: 7,
+  //   name: "NextJS",
+  //   icon: SiNextdotjs,
+  // },
+  // {
+  //   id: 8,
+  //   name: ".NET",
+  //   icon: SiDotnet,
+  // },
+  // {
+  //   id: 9,
+  //   name: "Figma",
+  //   icon: SiFigma,
+  // },
   {
     id: 10,
     name: "ViteJS",
@@ -130,21 +130,21 @@ export const TechStackList: ITechStackItem[] = [
     name: "Axios",
     icon: SiAxios,
   },
-  {
-    id: 15,
-    name: "Redux",
-    icon: SiRedux,
-  },
-  {
-    id: 16,
-    name: "GraphQL",
-    icon: SiGraphql,
-  },
-  {
-    id: 17,
-    name: "PostgreSQL",
-    icon: SiPostgresql,
-  },
+  // {
+  //   id: 15,
+  //   name: "Redux",
+  //   icon: SiRedux,
+  // },
+  // {
+  //   id: 16,
+  //   name: "GraphQL",
+  //   icon: SiGraphql,
+  // },
+  // {
+  //   id: 17,
+  //   name: "PostgreSQL",
+  //   icon: SiPostgresql,
+  // },
   {
     id: 18,
     name: "Sanity CMS",
@@ -155,11 +155,11 @@ export const TechStackList: ITechStackItem[] = [
     name: "TailwindCSS",
     icon: SiTailwindcss,
   },
-  {
-    id: 20,
-    name: "Firebase",
-    icon: SiFirebase,
-  },
+  // {
+  //   id: 20,
+  //   name: "Firebase",
+  //   icon: SiFirebase,
+  // },
 ];
 
 export const ProjectsList: IProjectItem[] = [
@@ -283,7 +283,6 @@ export const ProjectsList: IProjectItem[] = [
     link: "farcry-6-portfolio.vercel.app",
     img:Farcry6
   },
-  
 ];
 
 export const workExprience: IWorkExperience[] = [
