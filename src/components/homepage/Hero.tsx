@@ -13,7 +13,7 @@ function Hero() {
           Hello! I&apos;m Nana Kwasi,
           <br />a Software Engineer in Ghana🚀
         </h1>
-        <p className="text-xl md:text-2xl xl:text-3xl my-3 text-[#777777]">
+        {/* <p className="text-xl md:text-2xl xl:text-3xl my-3 text-[#777777]">
           Currently a Frontend Developer Intern at{" "}
           <a
             className="text-primary-light dark:text-primary-dark"
@@ -22,7 +22,7 @@ function Hero() {
           >
             Axon Information Systems
           </a>
-        </p>
+        </p> */}
         {/* <p className="text-xl md:text-2xl xl:text-3xl my-3 text-[#777777]">
           This page is under development. stay tuned!
         </p> */}
