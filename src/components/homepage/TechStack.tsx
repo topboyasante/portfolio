@@ -19,7 +19,7 @@ function TechStack() {
           return (
             <div
               key={item.id}
-              className="text-2xl lg:text-4xl hover:text-primary-light dark:hover:text-primary-dark ease duration-500 mx-5"
+              className="text-2xl lg:text-4xl hover:text-primary-light dark:hover:text-primary-dark ease duration-500 mx-8"
             >
               <item.icon />
             </div>
