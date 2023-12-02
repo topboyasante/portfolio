@@ -24,13 +24,16 @@ import {
   SiDjango,
   SiPython,
   SiMicrosoftsqlserver,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
 } from "react-icons/si";
 
 import FortyGV from "../assets/40Graphville.png";
 import LDTB from "../assets/LDTB.png";
 import NZWalks from "../assets/NZWalks.png";
 import Farcry6 from "../assets/Farcry6.png";
-
+import MyContacts from "../assets/MyContacts.png";
 
 interface ITechStackItem {
   id: number;
@@ -47,7 +50,7 @@ interface IProjectItem {
     icon: IconType;
   }[];
   link: string;
-  img:StaticImageData
+  img: StaticImageData;
 }
 
 interface IWorkExperience {
@@ -194,7 +197,7 @@ export const ProjectsList: IProjectItem[] = [
       },
     ],
     link: "40graphville.com",
-    img:FortyGV
+    img: FortyGV,
   },
   {
     id: 2,
@@ -235,10 +238,51 @@ export const ProjectsList: IProjectItem[] = [
       },
     ],
     link: "laundrydirttobright.com",
-    img:LDTB
+    img: LDTB,
   },
   {
     id: 3,
+    title: "MyContacts",
+    about: "Contact Mangement System",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiVite,
+      },
+      {
+        id: 4,
+        icon: SiReactquery,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 5,
+        icon: SiTypescript,
+      },
+      {
+        id: 6,
+        icon: SiNodedotjs,
+      },
+      {
+        id: 7,
+        icon: SiExpress,
+      },
+      {
+        id: 8,
+        icon: SiMongodb,
+      },
+    ],
+    link: "my-contacts-frontend-mocha.vercel.app/",
+    img: MyContacts,
+  },
+  {
+    id: 4,
     title: "NZWalks API",
     about: "Backend API",
     stack: [
@@ -256,12 +300,12 @@ export const ProjectsList: IProjectItem[] = [
       },
     ],
     link: "github.com/topboyasante/NZWalks",
-    img:NZWalks
+    img: NZWalks,
   },
   {
-    id: 4,
+    id: 5,
     title: "FarCry 6",
-    about: "Backend API",
+    about: "UI",
     stack: [
       {
         id: 1,
@@ -281,7 +325,7 @@ export const ProjectsList: IProjectItem[] = [
       },
     ],
     link: "farcry-6-portfolio.vercel.app",
-    img:Farcry6
+    img: Farcry6,
   },
 ];
 
