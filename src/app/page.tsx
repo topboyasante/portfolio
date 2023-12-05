@@ -8,9 +8,10 @@ function Page() {
   return (
     <main>
       <Hero />
+      <hr className="mb-5 lg:hidden border-primary-light dark:border-primary-dark" />
       <TechStack />
       <Projects />
-      <ResumeButton/>
+      <ResumeButton />
     </main>
   );
 }

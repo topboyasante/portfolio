@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import local from "next/font/local";
 import { clsx } from 'clsx';
+import Footer from "@/components/navigation/Footer";
 // import Footer from "@/components/navigation/Footer";
 // import Sitenary from "sitenary";
 
@@ -48,7 +49,7 @@ export default function RootLayout({
         >
           <Navbar />
           <main className="max-w-[1000px] pt-[9vh] sm:pt-[8vh] mx-auto p-5 xl:px-0">{children}</main>
-          {/* <Footer/> */}
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>

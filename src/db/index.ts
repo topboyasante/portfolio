@@ -34,6 +34,7 @@ import LDTB from "../assets/LDTB.png";
 import NZWalks from "../assets/NZWalks.png";
 import Farcry6 from "../assets/Farcry6.png";
 import MyContacts from "../assets/MyContacts.png";
+import tickettribe from "../assets/tickettribe.png";
 
 interface ITechStackItem {
   id: number;
@@ -168,8 +169,49 @@ export const TechStackList: ITechStackItem[] = [
 export const ProjectsList: IProjectItem[] = [
   {
     id: 1,
+    title: "TicketTribe (WIP)",
+    about: "Full Stack Event Ticketing System. Create Events, Buy and Sell Tickets!",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiNextdotjs,
+      },
+      {
+        id: 3,
+        icon: SiNodedotjs,
+      },
+      {
+        id: 4,
+        icon: SiReactquery,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 6,
+        icon: SiTypescript,
+      },
+      {
+        id: 7,
+        icon: SiExpress,
+      },
+      {
+        id: 8,
+        icon: SiMongodb,
+      },
+    ],
+    link: "tickettribe.vercel.app",
+    img: tickettribe,
+  },
+  {
+    id: 2,
     title: "40GraphVille",
-    about: "Website for a photography company, with a CMS.",
+    about: "Offical Website for 40GraphVille Photography + CMS for updating photos.",
     stack: [
       {
         id: 1,
@@ -200,9 +242,9 @@ export const ProjectsList: IProjectItem[] = [
     img: FortyGV,
   },
   {
-    id: 2,
-    title: "Laundry DirtToBright",
-    about: "Laundry Website",
+    id: 3,
+    title: "MyContacts",
+    about: "Full-Stack Contacts Management System with Calling & Email Functionalities.",
     stack: [
       {
         id: 1,
@@ -214,60 +256,19 @@ export const ProjectsList: IProjectItem[] = [
       },
       {
         id: 3,
-        icon: SiSanity,
-      },
-      {
-        id: 4,
-        icon: SiReactquery,
-      },
-      {
-        id: 5,
-        icon: SiTailwindcss,
-      },
-      {
-        id: 5,
-        icon: SiTypescript,
-      },
-      {
-        id: 6,
-        icon: SiDjango,
-      },
-      {
-        id: 7,
-        icon: SiPython,
-      },
-    ],
-    link: "laundrydirttobright.com",
-    img: LDTB,
-  },
-  {
-    id: 3,
-    title: "MyContacts",
-    about: "Contact Mangement System",
-    stack: [
-      {
-        id: 1,
-        icon: SiReact,
-      },
-      {
-        id: 2,
-        icon: SiVite,
-      },
-      {
-        id: 4,
-        icon: SiReactquery,
-      },
-      {
-        id: 5,
-        icon: SiTailwindcss,
-      },
-      {
-        id: 5,
-        icon: SiTypescript,
-      },
-      {
-        id: 6,
         icon: SiNodedotjs,
+      },
+      {
+        id: 4,
+        icon: SiReactquery,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 6,
+        icon: SiTypescript,
       },
       {
         id: 7,
@@ -278,54 +279,8 @@ export const ProjectsList: IProjectItem[] = [
         icon: SiMongodb,
       },
     ],
-    link: "my-contacts-frontend-mocha.vercel.app/",
+    link: "nkscontacts.vercel.app",
     img: MyContacts,
-  },
-  {
-    id: 4,
-    title: "NZWalks API",
-    about: "Backend API",
-    stack: [
-      {
-        id: 1,
-        icon: SiCsharp,
-      },
-      {
-        id: 2,
-        icon: SiDotnet,
-      },
-      {
-        id: 3,
-        icon: SiMicrosoftsqlserver,
-      },
-    ],
-    link: "github.com/topboyasante/NZWalks",
-    img: NZWalks,
-  },
-  {
-    id: 5,
-    title: "FarCry 6",
-    about: "UI",
-    stack: [
-      {
-        id: 1,
-        icon: SiReact,
-      },
-      {
-        id: 2,
-        icon: SiTypescript,
-      },
-      {
-        id: 3,
-        icon: SiVite,
-      },
-      {
-        id: 4,
-        icon: SiTailwindcss,
-      },
-    ],
-    link: "farcry-6-portfolio.vercel.app",
-    img: Farcry6,
   },
 ];
 
