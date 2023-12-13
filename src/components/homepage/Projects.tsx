@@ -18,6 +18,7 @@ function Projects() {
             sm_rowspan={1}
             md_colspan={3}
             md_rowspan={1}
+            key={item.id}
           >
             <a
               target="_blank"
