@@ -1,3 +1,4 @@
+import About from "@/components/homepage/About";
 import Hero from "@/components/homepage/Hero";
 import Projects from "@/components/homepage/Projects";
 import TechStack from "@/components/homepage/TechStack";
@@ -6,12 +7,12 @@ import React from "react";
 
 function Page() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-5 my-5">
       <Hero />
-      <hr className="mb-5 lg:hidden border-primary-light dark:border-primary-dark" />
-      <TechStack />
-      <Projects />
-      <ResumeButton />
+      <TechStack/>
+      <About/>
+      <Projects/>
+      <ResumeButton/>
     </main>
   );
 }

@@ -5,7 +5,7 @@ import { IoMailOpenOutline } from "react-icons/io5";
 
 function Links() {
   return (
-    <section className="flex gap-8 my-8 lg:w-[40%] flex-wrap justify-start">
+    <section className="flex gap-8 my-8 lg:w-full flex-wrap justify-start">
           <a
             href="https://www.linkedin.com/in/nana-kwasi-asante-abb32a226/"
             target="_blank"

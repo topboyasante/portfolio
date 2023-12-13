@@ -1,32 +1,28 @@
-"use client"
-import { TechStackList } from "@/db";
-import { motion } from "framer-motion";
 import React from "react";
+import GridContainer from "../ui/GridContainer";
 import Marquee from "react-fast-marquee";
+import { TechStackList } from "@/db";
 
 function TechStack() {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="w-full mb-5"
-    >
-      <h1 className="text-2xl lg:text-3xl text-left font-bold text-primary-light dark:text-primary-dark mb-5">
-        Tech Stack
-      </h1>
-      <Marquee>
-        {TechStackList.map((item) => {
-          return (
-            <div
-              key={item.id}
-              className="text-2xl lg:text-4xl hover:text-primary-light dark:hover:text-primary-dark ease duration-500 mx-8"
-            >
-              <item.icon />
-            </div>
-          );
-        })}
-      </Marquee>
-    </motion.section>
+    <GridContainer sm_colspan={2} sm_rowspan={1} md_colspan={1} md_rowspan={1}>
+      {/* <section className="flex flex-col justify-center h-full"> */}
+        <h1 className="font-semibold text-xl">My Stack</h1>
+        <br />
+        <Marquee>
+          {TechStackList.map((item) => {
+            return (
+              <div
+                key={item.id}
+                className="text-2xl lg:text-4xl hover:text-primary-light dark:hover:text-primary-dark ease duration-500 mx-8"
+              >
+                <item.icon />
+              </div>
+            );
+          })}
+        </Marquee>
+      {/* </section> */}
+    </GridContainer>
   );
 }
 
