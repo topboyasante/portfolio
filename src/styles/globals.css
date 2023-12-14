@@ -4,8 +4,8 @@
 
 @layer base {
   body {
-    @apply dark:bg-[#090909] 
-    bg-[#edf6f9]
+    @apply dark:bg-[#010001] 
+    bg-[#ffffff]
      ease-in duration-200;
   }
   /* body::before {
@@ -13,7 +13,7 @@
     fixed 
     w-screen 
     h-screen 
-    content-[""] opacity-[0.009] z-[-1] 
+    content-[""] opacity-[0.04] z-[-1] 
     pointer-events-none 
     bg-[linear-gradient(black_0.05rem,transparent_0.05rem),linear-gradient(90deg,black_0.05rem,transparent_0.05rem)] 
     dark:bg-[linear-gradient(white_0.05rem,transparent_0.05rem),linear-gradient(90deg,white_0.05rem,transparent_0.05rem)] 
@@ -23,7 +23,6 @@
   } */
   .nav-container {
     @apply bg-transparent
-    /* dark:bg-[#00000033]  */
     backdrop-blur-[5px];
   }
 }

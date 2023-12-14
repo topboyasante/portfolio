@@ -7,6 +7,7 @@ type GridContainerProps = {
   md_colspan: number;
   md_rowspan: number;
   children: ReactNode;
+  padding: boolean;
 };
 
 function GridContainer({ ...props }: GridContainerProps) {
@@ -30,7 +31,11 @@ function GridContainer({ ...props }: GridContainerProps) {
 
   return (
     <section
-      className="bg-[#ffffff] dark:bg-[#121212] p-5 rounded-xl"
+      className={
+        props.padding
+          ? "bg-[#fcfafa] dark:bg-[#090909] px-5 py-8 rounded-xl"
+          : "bg-[#fcfafa] dark:bg-[#090909] rounded-xl"
+      }
       style={{
         gridColumn: `span ${props.sm_colspan}`,
         gridRow: `span ${props.sm_rowspan}`,

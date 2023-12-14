@@ -9,24 +9,37 @@ function Hero() {
     <>
       {/* Bio */}
       <GridContainer
-        sm_colspan={3}
+        sm_colspan={4}
         sm_rowspan={1}
-        md_colspan={2}
+        md_colspan={3}
         md_rowspan={1}
+        padding={true}
       >
-        <h1 className="text-3xl md:text-4xl font-bold">
+        <h1 className="text-3xl md:text-4xl font-semibold">
           Hello! I&apos;m Nana Kwasi,
           <br />a Software Engineer in Ghana🚀
         </h1>
+        <br />
+        <p className="lg:text-xl font-light">Welcome to my Portfolio!</p>
+        <br />
+        <p className="lg:text-xl font-light">
+          Currently, I&apos;m completing my internship as a Front-End Developer at{" "}
+          <a href="#" className="text-primary-light dark:text-primary-dark">
+            Axon Information Systems
+          </a>
+          .
+        </p>
+        <br />
         <Links />
       </GridContainer>
       <GridContainer
         sm_colspan={1}
         sm_rowspan={1}
         md_colspan={1}
-        md_rowspan={1}
+        md_rowspan={2}
+        padding={false}
       >
-        <Image src={heroImg} alt="hero" />
+        <Image src={heroImg} alt="hero" className="h-full object-cover md:object-contain" />
       </GridContainer>
     </>
   );

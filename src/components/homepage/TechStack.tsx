@@ -5,7 +5,7 @@ import { TechStackList } from "@/db";
 
 function TechStack() {
   return (
-    <GridContainer sm_colspan={2} sm_rowspan={1} md_colspan={1} md_rowspan={1}>
+    <GridContainer padding={true} sm_colspan={3} sm_rowspan={1} md_colspan={3} md_rowspan={1}>
       {/* <section className="flex flex-col justify-center h-full"> */}
         <h1 className="font-semibold text-xl">My Stack</h1>
         <br />
