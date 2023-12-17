@@ -3,8 +3,9 @@ import "../styles/globals.css";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import local from "next/font/local";
-import { clsx } from 'clsx';
+import { clsx } from "clsx";
 import Footer from "@/components/navigation/Footer";
+import ResumeButton from "@/components/ui/ResumeButton";
 
 export const metadata: Metadata = {
   title: "Nana Kwasi Asante",
@@ -72,14 +73,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={clsx(graphik.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          <main className="max-w-[1000px] pt-[9vh] sm:pt-[8vh] mx-auto p-5 xl:px-0">{children}</main>
-          <Footer/>
+          <main className="max-w-[1000px] pt-[10vh] mx-auto p-5">
+            {children}
+          </main>
+          <ResumeButton/>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
