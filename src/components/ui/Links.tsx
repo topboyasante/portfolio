@@ -28,13 +28,6 @@ function Links() {
             <MdLogoDev />
           </a>
           <a
-            href="https://www.instagram.com/topboyasante_/"
-            target="_blank"
-            className="text-xl lg:text-2xl hover:scale-105 hover:text-primary-light dark:hover:text-primary-dark ease duration-500"
-          >
-            <SiInstagram />
-          </a>
-          <a
             href="mailto:asantekwasi101@gmail.com"
             target="_blank"
             className="text-xl lg:text-2xl hover:scale-105 hover:text-primary-light dark:hover:text-primary-dark ease duration-500"
