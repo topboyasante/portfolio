@@ -8,9 +8,6 @@ function Experience() {
       <section className="w-full h-full">
         <section className="w-full flex justify-center items-center">
           <section className="w-full">
-            <h1 className="text-2xl lg:text-3xl text-left font-bold text-primary-light dark:text-primary-dark">
-              Experience
-            </h1>
             <section className="">
               {workExprience.map((item, index) => {
                 return (

@@ -42,6 +42,18 @@ function Projects() {
                     </section>
                     <br />
                     <p>{item.about}</p>
+                    <section className="flex gap-5 flex-wrap">
+                      {item.stack.map((stack) => {
+                        return (
+                          <div
+                            key={stack.id}
+                            className="text-xl lg:text-2xl hover:text-primary-light dark:hover:text-primary-dark ease duration-500 mt-3"
+                          >
+                            <stack.icon />
+                          </div>
+                        );
+                      })}
+                    </section>
                   </section>
                   <Image
                     src={item.img}
