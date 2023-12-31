@@ -30,9 +30,10 @@ import {
 } from "react-icons/si";
 
 import FortyGV from "../assets/40Graphville.png";
-import LDTB from "../assets/LDTB.png";
+import LDTB2 from "../assets/LDTB2.png";
 import NZWalks from "../assets/NZWalks.png";
 import Farcry6 from "../assets/Farcry6.png";
+import rapidrecall from "../assets/rapidrecall.png";
 import MyContacts from "../assets/MyContacts.png";
 import tickettribe from "../assets/tickettribe.png";
 
@@ -169,6 +170,39 @@ export const TechStackList: ITechStackItem[] = [
 export const ProjectsList: IProjectItem[] = [
   {
     id: 1,
+    title: "40GraphVille",
+    about: "Offical Website for 40GraphVille Photography + CMS for updating photos.",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiNextdotjs,
+      },
+      {
+        id: 3,
+        icon: SiSanity,
+      },
+      {
+        id: 4,
+        icon: SiReactquery,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 5,
+        icon: SiJavascript,
+      },
+    ],
+    link: "40graphville.com",
+    img: FortyGV,
+  },
+  {
+    id: 2,
     title: "TicketTribe (WIP)",
     about: "Full Stack Event Ticketing System. Create Events, Buy and Sell Tickets!",
     stack: [
@@ -207,39 +241,6 @@ export const ProjectsList: IProjectItem[] = [
     ],
     link: "tickettribe.vercel.app",
     img: tickettribe,
-  },
-  {
-    id: 2,
-    title: "40GraphVille",
-    about: "Offical Website for 40GraphVille Photography + CMS for updating photos.",
-    stack: [
-      {
-        id: 1,
-        icon: SiReact,
-      },
-      {
-        id: 2,
-        icon: SiNextdotjs,
-      },
-      {
-        id: 3,
-        icon: SiSanity,
-      },
-      {
-        id: 4,
-        icon: SiReactquery,
-      },
-      {
-        id: 5,
-        icon: SiTailwindcss,
-      },
-      {
-        id: 5,
-        icon: SiJavascript,
-      },
-    ],
-    link: "40graphville.com",
-    img: FortyGV,
   },
   {
     id: 3,
@@ -281,6 +282,64 @@ export const ProjectsList: IProjectItem[] = [
     ],
     link: "nkscontacts.vercel.app",
     img: MyContacts,
+  },
+  {
+    id: 4,
+    title: "Laundry DirtToBright",
+    about: "Full-Stack Laundry System. Place a booking and have your laundry taken in no time!",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 2,
+        icon: SiVite,
+      },
+      {
+        id: 3,
+        icon: SiPython,
+      },
+      {
+        id: 4,
+        icon: SiReactquery,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 6,
+        icon: SiTypescript,
+      },
+      {
+        id: 7,
+        icon: SiDjango,
+      },
+    ],
+    link: "nkscontacts.vercel.app",
+    img: LDTB2,
+  },
+  {
+    id: 5,
+    title: "RapidRecall",
+    about: "Simple Notes App. Longpress Notes to pin them!",
+    stack: [
+      {
+        id: 1,
+        icon: SiReact,
+      },
+      {
+        id: 5,
+        icon: SiTailwindcss,
+      },
+      {
+        id: 6,
+        icon: SiJavascript,
+      },
+    ],
+    link: "",
+    img: rapidrecall,
   },
 ];
 

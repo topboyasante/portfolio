@@ -33,8 +33,8 @@ function GridContainer({ ...props }: GridContainerProps) {
     <section
       className={
         props.padding
-          ? "bg-[#fcfafa] dark:bg-[#090909] px-5 py-8 rounded-xl"
-          : "bg-[#fcfafa] dark:bg-[#090909] rounded-xl"
+          ? "bg-[#fcfafa] dark:bg-[#2a2a2a] px-5 py-8 rounded-xl"
+          : "bg-[#fcfafa] dark:bg-[#2a2a2a] rounded-xl"
       }
       style={{
         gridColumn: `span ${props.sm_colspan}`,

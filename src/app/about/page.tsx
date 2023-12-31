@@ -21,8 +21,8 @@ function Page() {
           >
             KNUST
           </a>
-          . Beyond my studies, I&apos;m a Software Engineer in Ghana, currently
-          focusing on Front-End Development.
+          . Beyond my studies, I&apos;m a Software Engineer, currently
+          focusing on Front-End Development and learning Backend Development.
         </p>
         <br />
         <p>
@@ -69,8 +69,8 @@ function Page() {
       <br />
       <br />
       <section>
-        <h3 className="text-[#777777]">Work Experience</h3>
-        <Experience/>
+        <h3 className="text-[#777777]">Experience</h3>
+        <Experience />
       </section>
     </section>
   );

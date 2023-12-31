@@ -13,7 +13,7 @@ function Page() {
         {ProjectsList.map((item) => {
           return (
             <GridContainer
-              padding={true}
+              padding={false}
               sm_colspan={4}
               sm_rowspan={1}
               md_colspan={2}
@@ -26,7 +26,7 @@ function Page() {
                 className="w-full text-[#777777] flex items-center gap-2"
               >
                 <section className="w-full h-full rounded-xl">
-                  <section>
+                  <section className="p-5">
                     <section className="flex flex-row justify-between items-center h-[10%]">
                       <section>
                         <h3 className="text-xl xl:text-2xl text-primary-light dark:text-primary-dark">
@@ -55,7 +55,7 @@ function Page() {
                   <Image
                     src={item.img}
                     alt={item.title}
-                    className="rounded-3xl w-full object-cover"
+                    className="w-full object-cover"
                   />
                 </section>
               </a>

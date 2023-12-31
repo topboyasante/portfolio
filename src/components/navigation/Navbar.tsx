@@ -41,7 +41,7 @@ function Navbar() {
               </section>
             </Link>
             {/* Navbar: Large Screens */}
-            <div className="bg-[#e7e6e6] dark:bg-[#121212] rounded-3xl px-4 hidden lg:flex gap-5 items-center py-2">
+            <div className="bg-[#e7e6e6] dark:bg-[#2a2a2a] rounded-3xl px-4 hidden lg:flex gap-5 items-center py-2">
               {NavLinks.map((item, index) => {
                 return (
                   <Link

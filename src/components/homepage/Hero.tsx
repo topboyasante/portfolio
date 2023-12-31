@@ -5,7 +5,7 @@ import Links from "../ui/Links";
 function Hero() {
   return (
     <section className="my-8">
-      <section className="w-[100px] h-[100px] bg-[#e7e6e6] dark:bg-[#121212] rounded-3xl flex justify-center items-center">
+      <section className="w-[100px] h-[100px] bg-[#e7e6e6] dark:bg-[#2a2a2a] rounded-3xl flex justify-center items-center">
         <Image
           src={heroImg}
           alt="hero"
