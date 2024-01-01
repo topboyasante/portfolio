@@ -338,7 +338,7 @@ export const ProjectsList: IProjectItem[] = [
         icon: SiJavascript,
       },
     ],
-    link: "",
+    link: "github.com/topboyasante/rapidrecall",
     img: rapidrecall,
   },
 ];
