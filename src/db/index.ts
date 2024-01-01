@@ -323,7 +323,7 @@ export const ProjectsList: IProjectItem[] = [
   {
     id: 5,
     title: "RapidRecall",
-    about: "Simple Notes App. Longpress Notes to pin them!",
+    about: "Simple Notes App. Long press notes to pin them!",
     stack: [
       {
         id: 1,
