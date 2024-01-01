@@ -30,7 +30,7 @@ import {
 } from "react-icons/si";
 
 import FortyGV from "../assets/40Graphville.png";
-import LDTB2 from "../assets/LDTB2.png";
+import LDTB2 from "../assets/ldtb2.png";
 import NZWalks from "../assets/NZWalks.png";
 import Farcry6 from "../assets/Farcry6.png";
 import rapidrecall from "../assets/rapidrecall.png";
