@@ -121,8 +121,9 @@ function Navbar() {
                               ? "text-primary-light dark:text-primary-dark"
                               : ""
                           }
+                          onClick={() => setIsOpen(false)}
                         >
-                          <button onClick={() => setIsOpen(false)}>
+                          <button >
                             <p>{item.name}</p>
                           </button>
                         </Link>
